@@ -1,12 +1,8 @@
 name: Review Assign
 
-#on:
-#  pull_request:
-#    types: [opened, ready_for_review]
-
 on:
   pull_request_target: # Please read https://securitylab.github.com/research/github-actions-preventing-pwn-requests/ before using
-     types: [opened, ready_for_review]
+     types: [opened, ready_for_review, closed]
 
 permissions:
   contents: read
