@@ -9,14 +9,14 @@ permissions:
   pull-requests: write
 
 jobs:
-  label:
+  add_label:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v4
+      - uses: actions/checkout@v2
+      - uses: actions-ecosystem/action-add-labels@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          test-label:
-          - any: ['README.md','*.*']
+          labels: reviewpls
 
   assign:
     runs-on: ubuntu-latest
