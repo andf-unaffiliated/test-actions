@@ -23,5 +23,5 @@ jobs:
         with:
           assignees: ${{ github.actor }} # assign pull request author
           reviewers: andf-unaffiliated
-          ready-comment: 'Ready for review :rocket: <reviewers>'
-          merged-comment: 'It was merged. Thanks for your review :wink: <reviewers>'
+          ready-comment: ":tada: Thanks for your Pull Request! We appreciate your help improving our documentation!<br>:memo: Please take a moment to check the following:<ul><li>Have you signed our contributor agreement? If not, look for a comment below from cockroach-teamcity with instructions - we cannot review your submission until you've signed this agreement.</li><li>Does your submission adhere to our Style Guide? Please edit your PR to meet these guidelines if necessary: our docs adhere to this style guide to maintain consistency, readability, and clarity throughout.</li></ul><br>:writing_hand: We'll respond here as soon as we can. Thanks!"
+          merged-comment: ":tada: We've merged your PR! Thanks again for helping to improve our documentation!"
